@@ -1,0 +1,32 @@
+{
+  "name": "web-crawler",
+  "version": "0.0.0",
+  "description": "\"Package containing functionality to crawl and execute scripts in headless browser(s) instances in order to extract information from websites\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunometzker/web-crawler.git"
+  },
+  "keywords": [
+    "web",
+    "crawling",
+    "node",
+    "js",
+    "nightmare"
+  ],
+  "author": "Bruno Metzker",
+  "license": "ISC",
+  "dependencies": {
+    "nightmare": "^3.0.2",
+    "my_inspector": "git+ssh://personal.github.com:brunometzker/inspector.git#master"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1",
+    "nyc": "^15.1.0",
+    "sinon": "^9.0.3"
+  }
+}
