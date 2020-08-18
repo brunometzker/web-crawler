@@ -35,11 +35,11 @@ class CrawlerOptions {
         const checkUrl = (url) => {            
             const pattern = /https?:\/\/.*/;
 
-            if(!inspector.isOfType(url, 'string')) {
+            if(!inspector.type.isOfType(url, 'string')) {
                 throw new Error(`${url} must be a string`);
             }
 
-            if(!inspector.stringMatches(url, pattern)) {
+            if(!inspector.string.stringMatches(url, pattern)) {
                 throw new Error(`${url} must match pattern: ${pattern}`);
             }
 
@@ -47,7 +47,7 @@ class CrawlerOptions {
         }
 
         const checkExtractor = (extractor) => {
-            if(!inspector.isOfType(extractor, 'function')) {
+            if(!inspector.type.isOfType(extractor, 'function')) {
                 throw new Error(`${extractor} must be a function`);
             }
 
@@ -55,7 +55,7 @@ class CrawlerOptions {
         }
         
         const checkExtractorArgs = (args) => {
-            if(!inspector.isOfType(args, 'object')) {
+            if(!inspector.type.isOfType(args, 'object')) {
                 throw new Error(`${args} must be an object`);
             }
 
