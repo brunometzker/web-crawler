@@ -20,7 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "nightmare": "^3.0.2",
-    "my_inspector": "git+ssh://git@personal.github.com:brunometzker/inspector.git"
+    "my_inspector": "git+https://github.com/brunometzker/inspector.git"
   },
   "devDependencies": {
     "chai": "^4.2.0",
